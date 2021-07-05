@@ -1,0 +1,135 @@
+.banner {
+    width: 97.5vw;
+    height: 17.5vh;
+    margin: 1.25vw auto;
+    background: url(../assets/dinner-table.jpeg) center;
+    background-size: cover;
+    animation: fadeInLeft 2s;
+}
+
+.banner h1 {
+    font-size: 5rem;
+    margin: 0;
+    text-align: center;
+    animation: fadeInBottom 2s
+}
+
+.menu {
+    margin: 1.25vw auto;
+    width: 97.5vw;
+    background-color: rgb(17, 16, 16);
+    animation: fadeInRight 2s;
+}
+
+.inputContainer {
+    height: 7.5vh;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.inputContainer input {
+    margin: 1rem;
+    font-size: 2rem;
+    padding: 1rem 1rem 1rem 2rem;
+    border-radius: 1.5rem;
+    border: none;
+}
+
+.inputContainer input:focus {
+    outline: none;
+}
+
+.searchContainer {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search {
+    overflow: hidden;
+    width: 60%;
+    transition: all .2s;
+}
+
+.search:hover {
+    overflow: hidden;
+    width: 90%;
+}
+
+.countContainer {
+    flex-shrink: 10;
+
+    display: flex;
+    justify-content: center;
+}
+
+.count {
+    width: 100%;
+}
+
+.submitButton {
+    width: 15rem;
+    height: 5rem;
+    margin-right: 1rem;
+}
+
+
+.meals {
+    width: 97.5vw;
+}
+
+.mealsPadding {
+    width: 97.5vw;
+    padding-bottom: 1.25rem;
+}
+
+@keyframes fadeInBottom {
+    0% {
+        transform: translateY(10vh);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(-1vh);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        transform: translateX(-10vw);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateX(1vw);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        transform: translateX(10vw);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateX(-1vw);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}

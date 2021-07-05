@@ -1,0 +1,194 @@
+.intro {
+    width: 95vw;
+    height: calc(92.5vh - 5vw);
+    background: url(../assets/restaurant-home.jpeg) center;
+    background-size: cover;
+    margin: 2.5vw auto;
+    animation: fadeIn 2s;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro a {
+    text-decoration: none;
+}
+
+.titleContainer {
+    margin: 0 0 25vh 0;
+    letter-spacing: 2px;
+    margin-right: -2px;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro h1 {
+    margin: 0 0 2vh 0;
+    font-size: 6rem;
+    animation: fadeInTop 2s;
+    text-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.9);
+}
+
+.intro h2 {
+    margin: 0;
+    font-size: 3rem;
+    animation: fadeInBottom 2s;
+    text-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.9);
+}
+
+.introButton {
+    color: white;
+}
+
+/* .divider {
+
+} */
+
+.chef {
+    background: url(../assets/restaurant-home-2.jpeg);
+    background-size: cover;
+    width: 95vw;
+    height: 75vh;
+    margin: 2.5vw auto;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.chef h1 {
+    color: white;
+    margin: 5vh 0 0 0;
+    font-size: 5rem;
+    animation: fadeInLeft 2s;
+    text-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.9);
+    margin: 2rem 0;
+}
+
+.chef div {
+    width: 10vw;
+    height: 20%;
+    background-color: rgba(0, 0, 0, 0.9);
+    margin: 1rem;
+    flex: 1;
+    position: relative;
+    transition: all .2s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chef div h2 {
+    color: white;
+    font-size: 5rem;
+}
+
+.chef div:hover {
+    background-color: transparent;
+}
+
+.chef div:hover h2 {
+    opacity: 0;
+}
+
+.chef div::after {
+    font-size: 0rem;
+    content: '';
+    position: absolute;
+    top: 0%;
+    width: 0vw;
+    height: 100%;
+    opacity: 0;
+    transition: all .2s;
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chef div:hover::after {
+    width: 60vw;
+    opacity: 1;
+    font-size: 5rem;
+}
+
+.fact_1::after {
+    content: 'Our World Reowned 5-Star Restaurant Is Known To Everyone' !important;
+}
+
+.fact_2::after {
+    content: 'The Best Dining Experience You Will Ever Have' !important;
+}
+
+.fact_3::after {
+    content: 'Our Food Was Deemed Incredible By Gordon Ramsay' !important;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInTop {
+    0% {
+        transform: translateY(-10vh);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(1vh);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInBottom {
+    0% {
+        transform: translateY(10vh);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(-1vh);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        transform: translateX(-10vh);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateX(1vh);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}

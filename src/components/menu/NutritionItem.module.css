@@ -1,0 +1,25 @@
+.nutritionItem {
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 2rem;
+    margin: 2.5rem;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nutritionItem img {
+    margin-top: 2rem;
+    border-radius: 5rem;
+    border: rgba(0, 0, 0, 1) solid 0.5rem;
+}
+
+.nutritionItem h2 {
+    font-size: 3rem;
+}
+
+.nutritionItem p {
+    font-size: 2rem;
+}

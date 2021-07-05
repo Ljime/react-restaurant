@@ -1,0 +1,44 @@
+.cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartList {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 1.5rem;
+    flex-basis: 60%;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    position: relative;
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}  
+
+.summary {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    margin: 5rem;
+    flex-basis: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.summary h2 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+.summary h1 {
+    width: 90%;
+    padding-top: 1rem;
+    border-top: 2px solid black;
+}
+
+.summary button {
+    margin-right: auto;
+}

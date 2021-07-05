@@ -1,0 +1,70 @@
+.cartItem {
+    width: calc(100% - 6rem);
+    height: 15rem;
+    margin: 2rem;
+    background-color: rgba(61, 55, 55, 0.6);
+    padding: 1.5rem 1rem;
+    margin-left: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cartItem img {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    border: 0.2rem solid black;
+}
+
+.textContainer {
+    margin-left: 1rem;
+    height: 100%;
+    flex: 2;
+}
+
+.textContainer h2 {
+    color: white;
+    font-size: 2.5rem;
+    padding: 1rem 1rem 0.5rem 1rem;
+    margin: 0;
+}
+
+.textContainer h3 {
+    color: white;
+    font-size: 2rem;
+    padding: 0 1rem;
+    margin: 0;
+}
+
+.textContainer a {
+    text-decoration: none;
+}
+
+.textContainer button {
+    font-family: sans-serif;
+    font-size: 2.25rem;
+    margin-top: 1rem;
+    padding: 3.25rem 0rem;
+}
+
+.countContainer {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.countContainer h2 {
+    color: white;
+    font-size: 2.5rem;
+    margin: 1rem;
+}
+
+.countContainer button {
+    width: 6rem;
+    height: 5rem;
+    border-radius: 50%;
+    margin: 1rem;
+}
