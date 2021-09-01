@@ -21,8 +21,12 @@
     animation: fadeInRight 2s;
 }
 
+.menu button {
+    padding: 1rem;
+}
+
 .inputContainer {
-    height: 7.5vh;
+    min-height: 7.5vh;
 
     display: flex;
     justify-content: space-around;
@@ -60,7 +64,7 @@
 }
 
 .countContainer {
-    flex-shrink: 10;
+    flex-shrink: 1.5;
 
     display: flex;
     justify-content: center;

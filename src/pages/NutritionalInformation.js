@@ -10,7 +10,7 @@ const NutritionalInformation = () => {
     
     const applyNutritionInfo = useCallback((data) => {
         const {image, title, nutrition} = data
-        const {calories, carbs, fat, protein, nutrients} = nutrition
+        const {calories, carbs, fat, protein} = nutrition
         const info = {image, title, calories, carbs, fat, protein}
 
         SetNutritionInfo(info)

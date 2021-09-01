@@ -21,7 +21,7 @@
     letter-spacing: 2px;
     margin-right: -2px;
     color: white;
-
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,7 +56,7 @@
     width: 95vw;
     height: 75vh;
     margin: 2.5vw auto;
-
+    text-align: center;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -99,7 +99,6 @@
 }
 
 .chef div::after {
-    font-size: 0rem;
     content: '';
     position: absolute;
     top: 0%;
@@ -120,7 +119,15 @@
 .chef div:hover::after {
     width: 60vw;
     opacity: 1;
-    font-size: 5rem;
+    font-size: 3rem;
+}
+
+@media (max-width: 400px) {
+    .chef div:hover::after {
+        width: 60vw;
+        opacity: 1;
+        font-size: 2.5rem;
+    }
 }
 
 .fact_1::after {

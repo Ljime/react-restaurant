@@ -22,13 +22,6 @@ const Header = () => {
             >
                 Menu
             </NavLink>
-            <NavLink
-                className={classes.link}
-                activeClassName={classes.active}
-                to="/location"
-            >
-                Location
-            </NavLink>
             <Link to='/cart' className={classes.buttonLink}>
                 <Button>Cart {totalPrice}</Button>
             </Link>

@@ -24,12 +24,11 @@ const MenuItem = (props) => {
                 <h2>{props.title}</h2>
                 <h3>${props.price}</h3>
                 <Link to={`${match.path}/${props.id}`}>
-                    <Button>Nutritional Information</Button>
+                    <Button className={classes.info}>More Info</Button>
                 </Link>
             </div>
             <div className={classes.buttonContainer}>
                 <Button onClick={addItemHandler}>Add To Cart</Button>
-                {/* <img className={classes.imgAnimation} src={props.image} alt='Food'></img> */}
             </div>
         </div>
     )

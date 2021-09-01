@@ -7,7 +7,6 @@ import Spinner from "./components/UI/Spinner";
 
 const Home = React.lazy(() => import('./pages/Home'))
 const Menu = React.lazy(() => import("./pages/Menu"))
-const Location = React.lazy(() => import("./pages/Location"))
 const NutritionalInformation = React.lazy(() => import("./pages/NutritionalInformation"))
 const Cart = React.lazy(() => import("./pages/Cart"))
 
@@ -38,9 +37,6 @@ function App() {
 							</Route>
 							<Route path='/menu/:foodID'>
 								<NutritionalInformation></NutritionalInformation>
-							</Route>
-							<Route path="/location">
-								<Location></Location>
 							</Route>
 							<Route path='/cart'>
 								<Cart></Cart>
